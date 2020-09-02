@@ -50,7 +50,6 @@ C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\bin\Debug\netcoreapp3.1\
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.csprojAssemblyReference.cache
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.AssemblyInfoInputs.cache
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.AssemblyInfo.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.RazorAssemblyInfo.cache
@@ -60,7 +59,6 @@ C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.RazorCoreGenerate.cache
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -228,3 +226,4 @@ C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\bin\Debug\netcoreapp3.1\
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.csproj.CoreCompileInputs.cache
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pao\source\repos\ProyectoTienda\ProyectoTienda\obj\Debug\netcoreapp3.1\ProyectoTienda.csprojAssemblyReference.cache
