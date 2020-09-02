@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9f6lSVcoO+W7v8lDX/xemulm7yjosZDyO21bFTeh/QwdSvq7aqrvpBQRUJk9lmRcl6HoIHeel1ioL8XlfrhAqw==",
+  "dgSpecHash": "bksNBDEFVDpsCWJrElFt/t3GBfiFjEObL5MN/AsSRjsPI6hDIT1GrYFsqO45z1lQzBCfB2bV68PZQS8ljeg2/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pao\\source\\repos\\ProyectoTienda\\ProyectoTienda\\ProyectoTienda.csproj",
+  "projectFilePath": "C:\\Users\\Pao\\Desktop\\Tiendas-de-Barrio-develop\\ProyectoTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pao\\.nuget\\packages\\bootstrap\\4.5.2\\bootstrap.4.5.2.nupkg.sha512",
     "C:\\Users\\Pao\\.nuget\\packages\\bootstrap.sass\\4.5.2\\bootstrap.sass.4.5.2.nupkg.sha512",

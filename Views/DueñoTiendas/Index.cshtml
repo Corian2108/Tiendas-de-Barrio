@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<DueñoTienda>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "DetalleCompra";
 }
 
     
@@ -9,7 +9,7 @@
 <div id="contenedor">
     <div id="menu">
         <div class="content" style="text-align:left">
-            <a type="button" href="" class="btn btn-dark text-white">Perfil</a>
+            <a href="https://localhost:44338/Informaciones/Create" type="button" class="btn btn-dark text-white">Perfil</a>
         </div>
         <center><h3 style="color:#7B241C">Mis Productos</h3></center>
         <br>
@@ -98,23 +98,22 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>
-                            <img src="@item.FotoBase64" alt="Fotografía no encontrada" />
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Detalle)
-                        </td>
+    <tr>
+        <td>
+            <img src="@item.FotoBase64" alt="Fotografía no encontrada" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detalle)
+        </td>
 
-                        <td>
-                            <center>
-                                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> <br>
-                                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> <br>
-                                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
-                            </center>
-                        </td>
-                    </tr>
-                }
+        <td>
+            <center>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> <br>
+                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> <br>
+                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+            </center>
+        </td>
+    </tr>}
             </tbody>
         </table>
         <br><br><br><br>
@@ -122,6 +121,9 @@
             <p>
                 <a class="btn btn-outline-secondary" asp-action="Create">Crear</a>
             </p>
+        </center>
+        <center>
+            <a type="button" href="https://localhost:44338/CompraDetalles" class="btn btn-dark text-white">Detalles</a>
         </center>
     </div>
     @*<br>

@@ -1,0 +1,143 @@
+﻿@model IEnumerable<ProyectoTienda.Models.Informacion>
+
+@{
+    ViewData["Title"] = "";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreTienda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ruc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Permisos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EncardadoEm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PcrEm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EncardadoDes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PcrDes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorreoElectornico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroCelular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contraseña)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntregaDomicilio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReservaPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transBancaria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tarjeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Otros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Efectivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FacturaElectronica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FacturaFisica)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreTienda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ruc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Permisos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EncardadoEm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PcrEm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EncardadoDes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PcrDes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorreoElectornico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroCelular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contraseña)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EntregaDomicilio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservaPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.transBancaria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarjeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Otros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Efectivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FacturaElectronica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FacturaFisica)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -13,5 +13,7 @@ namespace ProyectoTienda.Models
         public string CalleSecundari { get; set; }
         public string Referencia { get; set; }
         public string Ciudad { get; set; }
+        public string Barrio { get; set; }
+        public char CoordenadaGoogle { get; set; }
     }
 }

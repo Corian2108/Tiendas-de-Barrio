@@ -9991,11 +9991,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pao\\source\\repos\\ProyectoTienda\\ProyectoTienda\\ProyectoTienda.csproj",
+      "projectUniqueName": "C:\\Users\\Pao\\Desktop\\Tiendas-de-Barrio-develop\\ProyectoTienda.csproj",
       "projectName": "ProyectoTienda",
-      "projectPath": "C:\\Users\\Pao\\source\\repos\\ProyectoTienda\\ProyectoTienda\\ProyectoTienda.csproj",
+      "projectPath": "C:\\Users\\Pao\\Desktop\\Tiendas-de-Barrio-develop\\ProyectoTienda.csproj",
       "packagesPath": "C:\\Users\\Pao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pao\\source\\repos\\ProyectoTienda\\ProyectoTienda\\obj\\",
+      "outputPath": "C:\\Users\\Pao\\Desktop\\Tiendas-de-Barrio-develop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pao\\AppData\\Roaming\\NuGet\\NuGet.Config",

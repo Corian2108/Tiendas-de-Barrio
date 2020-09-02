@@ -17,5 +17,9 @@ namespace ProyectoTienda.Data
         public DbSet<CompraCliente> CompraCliente { get; set; }
 
         public DbSet<DueñoTienda> DueñoTienda { get; set; }
+
+        public DbSet<ProyectoTienda.Models.CompraDetalle> CompraDetalle { get; set; }
+
+        public DbSet<ProyectoTienda.Models.Informacion> Informacion { get; set; }
     }
 }

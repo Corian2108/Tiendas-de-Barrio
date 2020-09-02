@@ -43,12 +43,33 @@ namespace ProyectoTienda.Migrations
                     b.ToTable("CompraCliente");
                 });
 
+            modelBuilder.Entity("ProyectoTienda.Models.CompraDetalle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("DetalleCompra")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Precio")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CompraDetalle");
+                });
+
             modelBuilder.Entity("ProyectoTienda.Models.Direccion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Barrio")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CallePrincipal")
                         .HasColumnType("nvarchar(max)");
@@ -62,7 +83,14 @@ namespace ProyectoTienda.Migrations
                     b.Property<int?>("CompraClienteId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CoordenadaGoogle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
                     b.Property<int?>("DueñoTiendaId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("InformacionId")
                         .HasColumnType("int");
 
                     b.Property<string>("Referencia")
@@ -73,6 +101,8 @@ namespace ProyectoTienda.Migrations
                     b.HasIndex("CompraClienteId");
 
                     b.HasIndex("DueñoTiendaId");
+
+                    b.HasIndex("InformacionId");
 
                     b.ToTable("Direccion");
                 });
@@ -104,6 +134,77 @@ namespace ProyectoTienda.Migrations
                     b.ToTable("DueñoTienda");
                 });
 
+            modelBuilder.Entity("ProyectoTienda.Models.Informacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Contraseña")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("CorreoElectornico")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Efectivo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("EncardadoDes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EncardadoEm")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EntregaDomicilio")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("FacturaElectronica")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("FacturaFisica")
+                        .HasColumnType("bit");
+
+                    b.Property<byte[]>("Foto")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("NombreTienda")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NumeroCelular")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Otros")
+                        .HasColumnType("bit");
+
+                    b.Property<byte[]>("PcrDes")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PcrEm")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("Permisos")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<bool>("ReservaPedido")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Ruc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<bool>("Tarjeta")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("transBancaria")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Informacion");
+                });
+
             modelBuilder.Entity("ProyectoTienda.Models.Producto", b =>
                 {
                     b.Property<int>("Id")
@@ -112,6 +213,9 @@ namespace ProyectoTienda.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("CompraClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CompraDetalleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Descripcion")
@@ -130,6 +234,8 @@ namespace ProyectoTienda.Migrations
 
                     b.HasIndex("CompraClienteId");
 
+                    b.HasIndex("CompraDetalleId");
+
                     b.HasIndex("DueñoTiendaId");
 
                     b.ToTable("Producto");
@@ -144,6 +250,10 @@ namespace ProyectoTienda.Migrations
                     b.HasOne("ProyectoTienda.Models.DueñoTienda", null)
                         .WithMany("Direccion")
                         .HasForeignKey("DueñoTiendaId");
+
+                    b.HasOne("ProyectoTienda.Models.Informacion", null)
+                        .WithMany("Direccion")
+                        .HasForeignKey("InformacionId");
                 });
 
             modelBuilder.Entity("ProyectoTienda.Models.Producto", b =>
@@ -151,6 +261,10 @@ namespace ProyectoTienda.Migrations
                     b.HasOne("ProyectoTienda.Models.CompraCliente", null)
                         .WithMany("Productos")
                         .HasForeignKey("CompraClienteId");
+
+                    b.HasOne("ProyectoTienda.Models.CompraDetalle", null)
+                        .WithMany("Productos")
+                        .HasForeignKey("CompraDetalleId");
 
                     b.HasOne("ProyectoTienda.Models.DueñoTienda", null)
                         .WithMany("Productos")
