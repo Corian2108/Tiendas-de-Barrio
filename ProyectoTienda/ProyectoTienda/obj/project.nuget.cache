@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WiZ76UWFLEmH9NyantiCDETfJ9hHhCp6Xl9UMTP276plBSC/h4PwkGvURlHpEACVhFR/8COouEeJoNE+n4XpXg==",
+  "dgSpecHash": "kbL21u3ZLveZckMUpBnYjGu7DQp4/7Ksy3Fg4bGzHxzzhe255PyqtqIQk6ApKDa8zYEepE7ouU9WZDD4ROkzTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agustin Vaca\\Downloads\\ProyectoTienda\\ProyectoTienda\\ProyectoTienda.csproj",
+  "projectFilePath": "C:\\Users\\Agustin Vaca\\Documents\\YAVIRAC\\Proyecto integrador\\Tiendas-de-Barrio\\ProyectoTienda\\ProyectoTienda\\ProyectoTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agustin Vaca\\.nuget\\packages\\bootstrap\\4.5.2\\bootstrap.4.5.2.nupkg.sha512",
     "C:\\Users\\Agustin Vaca\\.nuget\\packages\\bootstrap.sass\\4.5.2\\bootstrap.sass.4.5.2.nupkg.sha512",
