@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.UI.V3.Pages.Account.Internal;
+using Microsoft.SqlServer.Dac.Model;
+using Microsoft.SqlServer.Management.Smo;
 
 namespace ProyectoTienda.Models
 {
@@ -11,7 +12,7 @@ namespace ProyectoTienda.Models
     {
         public int Id { get; set; }
         public string NombreTienda { get; set; }
-        public char Ruc { get; set; }
+        public string Ruc { get; set; }
         public byte[] Permisos { get; set; }
         public byte[] Foto { get; set; }
         [NotMapped]
@@ -23,7 +24,7 @@ namespace ProyectoTienda.Models
         public byte[] PcrDes { get; set; }
         public string CorreoElectornico { get; set; }
         public string NumeroCelular { get; set; }
-        public char Contraseña { get; set; }
+        public string Contraseña { get; set; }
         public bool EntregaDomicilio { get; set; }
         public bool ReservaPedido { get; set; }
         public bool transBancaria { get; set; }
